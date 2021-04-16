@@ -1,0 +1,33 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>example-simple</artifactId>
+  <groupId>example-simple</groupId>
+  <version>example-simple</version>
+  <name>example-simple</name>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>example-simple</artifactId>
+        <version>example-simple</version>
+        <name>example-simple</name>
+        <executions>
+          <execution>
+            <phase>generate-sources</phase>
+            <configuration>
+              <tasks>
+                <exec
+                  dir="${project.basedir}"
+                  executable="${project.basedir}/src/main/java/example-simple/app.java"
+                  failonerror="true">
+                </exec>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

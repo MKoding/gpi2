@@ -1,0 +1,401 @@
+    1  cd Shopping/
+    2  chmod 777 build.xml 
+    3  git
+    4  passwd
+    5  sudo apt install git-all
+    6  git clone https://github.com/MKoding/gpi2.git
+    7  rm -r gpi2/
+    8  ls
+    9  rm -r gpi2/
+   10  git clone https://github.com/MKoding/gpi2.git
+   11  cd gpi2/
+   12  ls
+   13  git config --global user.name "Mikel Romano"
+   14  git config --global user.email "romano.111279@e.unavarra.es"
+   15  git config --list
+   16  mkdir ejericio_2_infrastructura
+   17  ls
+   18  cd ejericio_2_infrastructura/
+   19  git clone https://github.com/sonph63195/Shopping.git
+   20  rm -r Shopping/
+   21  rm -r -f Shopping
+   22  ls
+   23  cd ..
+   24  git clone https://github.com/sonph63195/Shopping.git
+   25  ls
+   26  cd Shopping/
+   27  ls
+   28  cd build/
+   29  ls
+   30  cd web
+   31  ls
+   32  cd ..
+   33  cd
+   34  sudo add-apt-repository ppa:ubuntu-mozilla-security/ppa -y
+   35  sudo apt update
+   36  sudo apt upgrade
+   37  git apt install firefox
+   38  sudo apt install firefox
+   39  cd $HOME
+   40  wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F6.31.0/pmd-bin-6.31.0.zip
+   41  unzip pmd-bin-6.31.0.zip
+   42  alias pmd="$HOME/pmd-bin-6.31.0/bin/run.sh pmd"
+   43  pmd -d /usr/src -R rulesets/java/quickstart.xml -f text
+   44  gunzip -c findbugs-3.0.1.tar.gz | tar xvf -
+   45  ls
+   46  cd findbugs-3.0.1/
+   47  ls
+   48  cat README.txt 
+   49  ls
+   50  cd doc/
+   51  ls
+   52  java -version
+   53  ant -version
+   54  sudo apt update
+   55  sudo apt-get install openjdk-8-jdk openjdk-8-doc openjdk-8-jre-lib
+   56  java -version
+   57  sudo apt install ant
+   58  ant -version
+   59  cd ..
+   60  ant build
+   61  ls
+   62  cd src
+   63  ls
+   64  cd xsl
+   65  ls
+   66  cd ..
+   67  cd bin
+   68  ls
+   69  sudo apt-get install -y findbugs
+   70  findbugs
+   71  cd ..
+   72  sudo apt-get install -y findbugs
+   73  gunzip -c findbugs-3.0.1.tar.gz | tar xvf -
+   74  findbugs
+   75  clear
+   76  findbugs
+   77  cd Shopping/
+   78  sudo chmod -R 777 *
+   79  ant
+   80  ant build.xml
+   81  ant
+   82  ant create-funky-jar
+   83  ant create-jar
+   84  ant compile
+   85  ls
+   86  ant
+   87  findbugs
+   88  cd Shopping/
+   89  ant compile
+   90  ant create-jar
+   91  ant compile
+   92  ant run
+   93  ant init-macrodef-javac
+   94  ant do-dist
+   95  ant compile
+   96  ant pre-compile
+   97  ant compile
+   98  ant
+   99  ant javadoc-build
+  100  ant compile
+  101  ant 
+  102  cd nbproject/
+  103  ls
+  104  ant compilation
+  105  cd ..
+  106  ant compilation
+  107  ant run
+  108  ant run 1
+  109  ant run 1234567890
+  110  ant run tomcat.password
+  111  ant compile
+  112  ant jar
+  113  ant -jar
+  114  ant -debug
+  115  ant -help
+  116  ant -diagnostics
+  117  ant -help
+  118  ant -main compile
+  119  ant -main do-compile
+  120  ant compile
+  121  ant -do-compile
+  122  ant -no-input
+  123  ant -
+  124  ant -no-input compile
+  125  ant -noinput compile
+  126  ant
+  127  cd pmd-bin-6.31.0/
+  128  ls
+  129  cd bin/
+  130  ls
+  131  sh run.sh
+  132  cat run.sh
+  133  ./run.sh
+  134  ./run.sh -h
+  135  ./run.sh -v
+  136  ./run.sh /Shopping
+  137  ./run.sh --files /Shopping
+  138  ./run.sh cpd --files /Shopping
+  139  ./run.sh cpd --files /Shopping --minimun-tokens 100
+  140  ./run.sh cpd --files /Shopping --minimum-tokens 100
+  141  ./run.sh cpd
+  142  cd ..
+  143  pmd-bin-6.31.0/bin/run.sh cpd --minimum-tokens 100 --files /Shopping
+  144  pmd-bin-6.31.0/bin/run.sh cpd --minimum-tokens 100 --files Shopping
+  145  pmd-bin-6.31.0/bin/run.sh pmd -d Shopping -f text -R rulesets/java/quickstart.xml
+  146  cd pmd-bin-6.31.0/bin/
+  147  ./run.sh pmd -d ../../Shopping -f text -R rulesets/java/quickstart.xml
+  148  ./run.sh pmd -d ../../Shopping -f xml -R rulesets/java/quickstart.xml
+  149  ./run.sh pmd -d ../../Shopping -f xml -R rulesets/java/quickstart.xml >> pmd.xml
+  150  ./run.sh pmd -d ../../Shopping -f text -R rulesets/java/quickstart.xml >> pmd.txt
+  151  ./run.sh pmd -d ../../Shopping -f html -R rulesets/java/quickstart.xml >> pmd.html
+  152  cd ..
+  153  cd
+  154  cd gpi2/
+  155  git status
+  156  git config -list
+  157  git config --list
+  158  git 
+  159  git status
+  160  git commit -m "Añadidos ficheros HTML con resultados del analisis de PMD y FindBugs"
+  161  git push
+  162  git push https://github.com/MKoding/gpi2.git
+  163  git push
+  164  git push git@github.com:MKoding/gpi2.git
+  165  ssh-keygen -t ed25519 -C "mikel.romano@outlook.es"
+  166  eval "$(ssh-agent -s)"
+  167  ssh-add ~/.ssh/id_ed25519
+  168  sudo apt-get install xclip
+  169  xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+  170  java -jar $FINDBUGS_HOME/lib/findbugs.jar
+  171  sudo java -jar /lib/findbugs.jar
+  172  chmod 777 $FINDBUGS_HOME/lib/findbugs.jar
+  173  java -jar findbugs-3.0.1/lib/findbugs.jar
+  174  CATALINA_HOME
+  175  cd $CATALINA_HOME/bin
+  176  ls
+  177  ./startup.sh
+  178  cd
+  179  cd $CATALINA_HOME/bin/startup.sh
+  180  $CATALINA_HOME/bin/startup.sh
+  181  ${catalina.home}
+  182  sudo find / -name "tomcat7"
+  183  sudo find / -name "tomcat"
+  184  sudo find / -name "tomcat8"
+  185  sudo find / -name "startup.sh"
+  186  cd $CATALINA_HOME/bin
+  187  cd
+  188  cd /var/lib/tomcat8
+  189  ls
+  190  ls -al
+  191  tomcat
+  192  tomcat8
+  193  apache
+  194  apache2
+  195  wget localhost:8080
+  196  sudo cd /var/lib/tomcat8/logs
+  197  su
+  198  cd /var/lib/tomcat8/logs
+  199  sudo chmod 777 /var/lib/tomcat8/logs
+  200  cd /var/lib/tomcat8/logs/localhost
+  201  ls
+  202  sudo chmod 777 /var/lib/tomcat8/work
+  203  sudo chmod 777 /var/lib/tomcat8/work/Catalina
+  204  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost
+  205  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/host-manager
+  206  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/manager
+  207  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/ROOT
+  208  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/manager/org
+  209  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/manager/org/apache
+  210  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/manager/org/apache/jsp
+  211  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF
+  212  sudo chmod 777 /var/lib/tomcat8/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp
+  213  sudo chmod 777 /var/lib/tomcat8/logs/localhost_access_log.2021-02-25.txt 
+  214  sudo chmod 777 /var/lib/tomcat8/conf/catalina.properties 
+  215  sudo chmod 777 /var/lib/tomcat8/conf/context.xml 
+  216  sudo chmod 777 /var/lib/tomcat8/conf/jaspic-providers.xml 
+  217  sudo chmod 777 /var/lib/tomcat8/conf/logging.properties 
+  218  sudo chmod 777 /var/lib/tomcat8/conf/server.xml 
+  219  sudo chmod 777 /var/lib/tomcat8/conf/tomcat-users.xml 
+  220  sudo chmod 777 /var/lib/tomcat8/conf/web.xml 
+  221  cd ..
+  222  cd conf/Catalina/localhost/
+  223  ant
+  224  cd
+  225  jar -cvf shopping.war Shopping
+  226  cp ~/shopping.war /var/lib/tomcat8/webapps/
+  227  sudo cp ~/shopping.war /var/lib/tomcat8/webapps/
+  228  wget localhost:8080
+  229  wget localhost:8080/Shopping
+  230  sudo chmod 777 /var/lib/tomcat8/webapps/shopping
+  231  sudo chmod 777 /var/lib/tomcat8/webapps/shopping/Shopping/
+  232  sudo chmod 777 /var/lib/tomcat8/webapps/shopping/META-INF/
+  233  cd /var/lib/tomcat8/webapps/
+  234  ls
+  235  cd Download
+  236  cd Descargas/
+  237  ls
+  238  unzip gradle-7.0-all.zip 
+  239  y
+  240  unzip gradle-7.0-bin.zip
+  241  y
+  242  unzip gradle-7.0-bin.zip
+  243  cd gradle-7.0/
+  244  cd bin/
+  245  ./gradle
+  246  cd ..
+  247  cd bin
+  248  sudo cp gradle /usr/bin/
+  249  cd ..
+  250  cd
+  251  cd Escritorio/
+  252  cd GPI-II/
+  253  gradle
+  254  ls
+  255  ./gradle
+  256  cd gradle
+  257  gradle
+  258  cd ..
+  259  ./gradlew
+  260  ls
+  261  gradle
+  262  sudo cp gradle /usr/bin/
+  263  sudo apt install gradle
+  264  cd ..
+  265  cd
+  266  git clone https://github.com/ladislas/Bare-Arduino-Project.git
+  267  cd Bare-Arduino-Project/
+  268  cd ..
+  269  cd Bare-Arduino-Project/
+  270  ls 'al
+  271  ls -al
+  272  rm -rf .git
+  273  rm -rf .gitignore 
+  274  rm -rf .gitmodules 
+  275  cd
+  276  cd gpi2/
+  277  git add -A
+  278  git commit -m "Añadidos ficheros practica 3"
+  279  git push
+  280  ls -al ~/.ssh
+  281  sudo apt-get install xclip
+  282  xclip -sel clip < ~/.ssh/id_rsa.pub
+  283  xclip -sel clip < ~/.ssh/id_ed25519.pub 
+  284  git push git@github.com:MKoding/gpi2.git
+  285  cd ejercicio_3_practica_build_1/
+  286  cd Bare-Arduino-Project/
+  287  sudo add-apt-repository ppa:git-core/ppa
+  288  sudo apt-get update && sudo apt-get upgrade
+  289  sudo apt-get install git arduino
+  290  sudo apt-get install gcc-avr binutils avr-libc avrdude
+  291  cd ..
+  292  git submodule update --init --recursive
+  293  cd ..
+  294  git submodule update --init --recursive
+  295  git clone https://github.com/ladislas/Bare-Arduino-Project MyArduinoProject
+  296  cd MyArduinoProject/
+  297  git submodule update --init --recursive
+  298  git remote set-url origin https://github.com/MKoding/MyArduinoProject
+  299  git push --set-upstream origin master
+  300  git remote set-url origin git@github.com:MKoding/MyArduinoProyect.git
+  301  git push --set-upstream origin master
+  302  brew install python python@2
+  303  sudo apt-get install python python@2
+  304  cd
+  305  test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+  306  test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+  307  test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+  308  echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+  309  sudo apt install linuxbrew-wrapper
+  310  brew install hello
+  311  brew install python python@2
+  312  sudo apt install python2
+  313  pip install pyserial & pip2 install pyserial
+  314  sudo apt install python-pip
+  315  pip install pyserial & pip2 install pyserial
+  316  sudo apt install python3-pip
+  317  sudo apt install python-pip
+  318  pip install pyserial & pip2 install pyserial
+  319* cd A
+  320  cd MyArduinoProject/
+  321  cd gpi2/
+  322  cd ejercicio_3_practica_build_1/
+  323  ls
+  324  cd MyArduinoProject/
+  325  pip install pyserial & pip2 install pyserial
+  326  cd src/FooProject/
+  327  cp ../../Makefile-Linux.mk ./Makefile
+  328  ls
+  329  make
+  330  cd /home/alumno/gpi2/ejercicio_3_practica_build_1/MyArduinoProject
+  331  ls
+  332  cd Arduino-Makefile/
+  333  ls
+  334  cd 
+  335  cd gpi2/ejercicio_3_practica_build_1/MyArduinoProject/src/FooProject/
+  336  make
+  337  make upload
+  338  ant
+  339  mvn -v
+  340  sudo apt install maven
+  341  cd
+  342  mvn -v
+  343  cd gpi2/ejercicio_4_practica_build_2/
+  344  mvn archetype:generate
+  345  clear
+  346  mvn archetype:generate -Dartifactld=simple
+  347  clear
+  348  mvn install
+  349  sudo mvn install
+  350  sudo mvn install archetype:crawl
+  351  mvn archetype:generate -DarchetypeGroupId=pl.lafk -DarchetypeArtifactId=simple -DarchetypeVersion=1.0 -DgroupId=pl.lafk -DartifactId=sample-app
+  352  cd
+  353  curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+  354  arduino-cli
+  355  ls
+  356  cd bin
+  357  ls
+  358  sudo cp arduino-cli /usr/bin/
+  359  cd ..
+  360  arduino-cli
+  361  cd gpi2/ejercicio_3_practica_build_1/MyArduinoProject/
+  362  ls
+  363  cd src/
+  364  ls
+  365  cd FooProject/
+  366  ls
+  367  arduino-cli compile --fqbn arduino:avr:nano FooProject/
+  368  arduino-cli compile --fqbn arduino:avr:uno FooProject/
+  369  arduino-cli compile
+  370  arduino-cli board list
+  371  arduino-cli listall
+  372  arduino-cli board listall
+  373  arduino-cli install arduino:avr
+  374  arduino-cli core install arduino:avr
+  375  arduino-cli compile --fqbn arduino:avr:nano
+  376  arduino-cli compile --fqbn arduino:samd
+  377* arduino-cli compile --fqbn arduino:samd:
+  378  arduino-cli compile --fqbn arduino:avr:nano
+  379  cd ..
+  380  xs ..
+  381  cd ..
+  382  history >> historial-comandos.txt
+  383  cd ..
+  384  cd ejercicio_4_practica_build_2/
+  385  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+  386  cd example-webapp/
+  387  pom.xml
+  388  ant pom.xml
+  389  ant
+  390  ant compile jar run
+  391  cd ..
+  392  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype -DarchetypeVersion=1.4
+  393  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4
+  394  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-simple-webapp -DarchetypeVersion=1.4
+  395  cd example-simple/
+  396  ant
+  397  cd ..
+  398  cd example-webapp/
+  399  ant
+  400  cd ..
+  401  history >> historial-comandos.txt
