@@ -3,14 +3,16 @@ pipeline {
     stages {
         stage('Gradle') {
             steps {
-                sh 'cd /ejercicio_3_practica_build_1/GPI-II/'
+                sh 'cd ejercicio_3_practica_build_1/GPI-II/'
                 sh './gradlew'
+                sh 'cd ..'
             }
         }
         stage('Arduino') {
             steps {
-                sh 'cd /ejercicio_3_practica_build_1/MyArduinoProject/src/FooProject/'
+                sh 'cd MyArduinoProject/src/FooProject/'
                 sh 'arduino-cli compile --fqbn arduino:avr:nano'
+                sh 'cd ../../../..'
             }       
         }
         stage('Maven') {
