@@ -8,15 +8,12 @@ pipeline {
         }
         stage('Arduino') {
             steps {
-                sh 'cd MyArduinoProject/src/FooProject/'
-                sh 'arduino-cli compile --fqbn arduino:avr:nano'
-                sh 'cd ../../../..'
+                sh 'arduino-cli compile --fqbn arduino:avr:nano ejercicio_3_practica_build_1/MyArduinoProject/src/FooProject/'
             }       
         }
         stage('Maven') {
             steps {
-                sh 'cd /ejercicio_4_practica_build_2/example-webapp/'
-                sh 'mvn -B -DskipTests clean package'
+                sh 'mvn -B -DskipTests clean package ejercicio_4_practica_build_2/example-webapp/'
                 sh 'mvn test'
                 sh './jenkins/scripts/deliver.sh'
             }
