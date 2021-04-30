@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Gradle') {
             steps {
+                sh 'ls'
                 sh 'cd /home/alumno/gpi2/ejercicio_3_practica_build_1/GPI-II/'
                 sh './gradlew'
             }
