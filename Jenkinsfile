@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage('Gradle') {
             steps {
-                sh 'cd ejercicio_3_practica_build_1/GPI-II/'
-                sh 'ls'
-                sh './gradlew'
-                sh 'cd ..'
+                sh './ejercicio_3_practica_build_1/GPI-II/gradlew'
             }
         }
         stage('Arduino') {
